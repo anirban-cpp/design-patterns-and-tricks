@@ -1,0 +1,115 @@
+.appbar {
+  width: 70%;
+  overflow: hidden;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  padding: 1rem 2rem;
+  z-index: 99;
+  background-color: #322f2f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appbar-left {
+  flex: 0.6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.appbar-right {
+  flex: 0.35;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.appbar-left > p {
+  margin: 0 3rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.appbar-search {
+  display: flex;
+  width: 40%;
+  padding: 0.9rem 2rem;
+  background-color: #5c5a5a;
+  border-radius: 5px;
+  align-items: center;
+  transition: width linear 0.3s;
+}
+
+.appbar-search:focus-within {
+  width: 50%;
+  transition: width linear 0.3s;
+}
+
+.appbar-search > svg {
+  margin-right: 1rem;
+}
+
+.appbar-left > svg {
+  cursor: pointer;
+}
+
+.appbar-search > input {
+  background-color: #5c5a5a;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  font-family: "Poppins";
+}
+
+.appbar-right > span {
+  margin-right: 1rem;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all linear 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.notification {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Poppins";
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+.appbar-right > span:hover {
+  background-color: #5c5a5a;
+}
+
+.appbar-right > span:last-child {
+  margin-right: 0;
+}
+
+.user-sphere {
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,106 @@
+.switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.switch > h1 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.box-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 2.1rem;
+  background-color: #322f2f;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.box-top-left {
+  display: flex;
+  flex-direction: row;
+  flex: 0.5;
+}
+
+.box-top-left > img {
+  width: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.person-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.person-details > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: white;
+  font-weight: bold;
+}
+
+.person-details > span {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+.person-details > span > p {
+  color: #9e9e9e;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.box-bottom {
+  background-color: black;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 2.1rem;
+}
+
+.account {
+  color: white;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  transition: all linear 250ms;
+}
+
+.switch-body {
+  border-radius: 12px;
+  width: 40px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch-btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all linear 250ms;
+  top: -2.1px;
+  z-index: 99;
+}

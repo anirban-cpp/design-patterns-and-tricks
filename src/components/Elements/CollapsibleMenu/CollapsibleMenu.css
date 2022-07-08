@@ -1,0 +1,136 @@
+.cmenu {
+  background-color: #072a62e8;
+  display: flex;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  flex-direction: column;
+}
+
+.cmenu-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.5rem;
+  cursor: pointer;
+  transition: all linear 200ms;
+}
+
+.cmenu-top:hover {
+  cursor: pointer;
+  background-color: #366bc0e8;
+}
+
+.cmenu-top > p {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Poppins";
+}
+
+.cmenu-subitem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  transition: all linear 200ms;
+  justify-content: space-between;
+  background-color: #173b73e8;
+}
+
+.cmenu-subitem:hover {
+  cursor: pointer;
+  background-color: #366bc0e8;
+}
+
+.cmenu-subitem > span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cmenu-subitem > span > p {
+  font-size: 1.25rem;
+  color: white;
+  font-family: "Poppins";
+  text-align: center;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.cmenu-bottom {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.7s cubic-bezier(0, 1, 0, 1);
+}
+
+.cmenu-bottom-show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.7s cubic-bezier(1, 0, 1, 0);
+}
+
+.cmenu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  transition: all linear 200ms;
+}
+
+.cmenu-subitem-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  transition: all linear 200ms;
+  overflow: hidden;
+  
+}
+
+.cmenu-subitem-item:hover {
+    cursor: pointer;
+    background-color: #366bc0e8;
+}
+
+.cmenu-subitem-item > svg {
+    position: relative;
+    left: 20px;
+}
+
+.cmenu-subitem-item > p {
+  font-size: 1.25rem;
+  color: white;
+  font-family: "Poppins";
+  text-align: center;
+  margin: 0;
+  margin-left: 15px;
+  position: relative;
+  left: 20px;
+}
+
+.cmenu-item:last-child {
+  margin-bottom: 2.5rem;
+}
+
+.cmenu-item:hover {
+  cursor: pointer;
+  background-color: #366bc0e8;
+}
+
+.cmenu-item > p {
+  font-size: 1.25rem;
+  color: white;
+  font-family: "Poppins";
+  text-align: center;
+  margin: 0;
+  margin-left: 15px;
+}
+
+.down-icon {
+  transition: all linear 0.2s;
+}
+
+.up-icon {
+  transform: rotate(180deg);
+  transition: all linear 0.2s;
+}
